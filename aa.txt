@@ -2,7 +2,7 @@
 Windows PowerShell transcript start
 Start time: 20181010225627
 Username: HCLTECH\lathika.v
-RunAs User: HCLTECH\lathika.v
+RunAs User: HCLTECH\gayathri
 Configuration Name: 
 Machine: LP-5CD7465HL2 (Microsoft Windows NT 10.0.16299.0)
 Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell_ise.exe
@@ -18,7 +18,24 @@ SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is C:\users\lathika.v\Desktop\aa.txt
 130574355879879274
-PS C:\Windows\System32> Function	  Get‐ServiceAccount($service,$computer)  {	  	   $ErrorActionPreference =	"SilentlyContinue"	   trap	  {	   return	"notreachable"	  	   }   $services	=gwmi win32_service	-­‐comp	$computer	-‐filter	"name='$service'"	   foreach	 ($service	in	$services)	  {	return $service.startname	   }	   }	  	   Get-­‐ServiceAccount("webclient","localhost") 
+PS C:\Windows\System32> Function	
+  Get‐ServiceAccount($service,$computer)
+  {	
+  	
+   $ErrorActionPreference =	"SilentlyContinue"	
+   trap	
+  {	
+   return	"notreachable"	
+  	
+   }
+   $services	=gwmi win32_service	-­‐comp	$computer	-‐filter	"name='$service'"	
+   foreach	 ($service	in	$services)	
+  {	return $service.startname	
+   }	
+   }	
+  	
+   Get-­‐ServiceAccount("webclient","localhost")
+ 
 Get-‐ServiceAccount : The term 'Get-‐ServiceAccount' is not recognized as the name of a cmdlet, function, script file, 
 or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
 again.
@@ -37,7 +54,23 @@ At line:17 char:4
   dException
     + FullyQualifiedErrorId : CommandNotFoundException
 
-PS C:\Windows\System32> Function Get‐ServiceAccount($service,$computer)  {	  	   $ErrorActionPreference =	"SilentlyContinue"	   trap	  {	   return	"notreachable"	  	   }   $services	=gwmi win32_service	-­‐comp	$computer	-‐filter	"name='$service'"	   foreach	 ($service	in	$services)	  {	return $service.startname	   }	   }	  	   Get-­‐ServiceAccount("webclient","localhost") 
+PS C:\Windows\System32> Function Get‐ServiceAccount($service,$computer)
+  {	
+  	
+   $ErrorActionPreference =	"SilentlyContinue"	
+   trap	
+  {	
+   return	"notreachable"	
+  	
+   }
+   $services	=gwmi win32_service	-­‐comp	$computer	-‐filter	"name='$service'"	
+   foreach	 ($service	in	$services)	
+  {	return $service.startname	
+   }	
+   }	
+  	
+   Get-­‐ServiceAccount("webclient","localhost")
+ 
 Get-‐ServiceAccount : The term 'Get-‐ServiceAccount' is not recognized as the name of a cmdlet, function, script file, 
 or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
 again.
@@ -56,10 +89,42 @@ At line:16 char:4
   dException
     + FullyQualifiedErrorId : CommandNotFoundException
 
-PS C:\Windows\System32> Function ServiceAccount($service,$computer)  {	  	   $ErrorActionPreference =	"SilentlyContinue"	   trap	  {	   return	"notreachable"	  	   }   $services	=gwmi win32_service	-­‐comp	$computer	-‐filter	"name='$service'"	   foreach	 ($service	in	$services)	  {	return $service.startname	   }	   }	  	 ServiceAccount("webclient","localhost") 
+PS C:\Windows\System32> Function ServiceAccount($service,$computer)
+  {	
+  	
+   $ErrorActionPreference =	"SilentlyContinue"	
+   trap	
+  {	
+   return	"notreachable"	
+  	
+   }
+   $services	=gwmi win32_service	-­‐comp	$computer	-‐filter	"name='$service'"	
+   foreach	 ($service	in	$services)	
+  {	return $service.startname	
+   }	
+   }	
+  	
+ ServiceAccount("webclient","localhost")
+ 
 >> TerminatingError(Get-WmiObject): "A positional parameter cannot be found that accepts argument '$null'."
 notreachable
-PS C:\Windows\System32> Function ServiceAccount($service,$computer)  {	  	   $ErrorActionPreference =	"SilentlyContinue"	   trap	  {	   return	"notreachable"	  	   }   $services	=gwmi win32_service	-­‐comp	$computer	-‐filter	"name='$service'"	   foreach	 ($service	in	$services)	  {	return $service.startname	   }	   }	  	 ServiceAccount("webclient","localhost") 
+PS C:\Windows\System32> Function ServiceAccount($service,$computer)
+  {	
+  	
+   $ErrorActionPreference =	"SilentlyContinue"	
+   trap	
+  {	
+   return	"notreachable"	
+  	
+   }
+   $services	=gwmi win32_service	-­‐comp	$computer	-‐filter	"name='$service'"	
+   foreach	 ($service	in	$services)	
+  {	return $service.startname	
+   }	
+   }	
+  	
+ ServiceAccount("webclient","localhost")
+ 
 
 >> TerminatingError(Get-WmiObject): "A positional parameter cannot be found that accepts argument '$null'."
 notreachable
